@@ -1,0 +1,7 @@
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacter_Sheet.csproj.AssemblyReference.cache
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacterSheet.MainForm.resources
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacter_Sheet.csproj.GenerateResource.cache
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacter_Sheet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacter_Sheet.AssemblyInfoInputs.cache
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacter_Sheet.AssemblyInfo.cs
+C:\Users\gmuiznieks\source\repos\DnDCharacter_Sheet\DnDCharacter_Sheet\obj\Debug\net8.0-windows\DnDCharacter_Sheet.csproj.CoreCompileInputs.cache

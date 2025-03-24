@@ -1,0 +1,7 @@
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DndCharSheet.csproj.AssemblyReference.cache
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DnDCharacterSheet.MainForm.resources
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DndCharSheet.csproj.GenerateResource.cache
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DndCharSheet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DndCharSheet.AssemblyInfoInputs.cache
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DndCharSheet.AssemblyInfo.cs
+C:\Users\gmuiznieks\source\repos\DndCharSheet\DndCharSheet\obj\Debug\net8.0-windows\DndCharSheet.csproj.CoreCompileInputs.cache
