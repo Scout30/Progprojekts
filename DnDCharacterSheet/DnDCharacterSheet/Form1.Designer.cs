@@ -33,7 +33,6 @@
             groupBox2 = new GroupBox();
             label15 = new Label();
             ProficiencyBonus = new Label();
-            PassiveWisdom = new Label();
             numericUpDown6 = new NumericUpDown();
             label11 = new Label();
             label10 = new Label();
@@ -58,72 +57,72 @@
             label2 = new Label();
             panel1 = new Panel();
             groupBox13 = new GroupBox();
-            richTextBox8 = new RichTextBox();
+            FeaturesAndTraits = new RichTextBox();
             groupBox12 = new GroupBox();
-            richTextBox7 = new RichTextBox();
+            OtherProficienciesAndLanguages = new RichTextBox();
             groupBox11 = new GroupBox();
-            richTextBox6 = new RichTextBox();
+            BackPack = new RichTextBox();
             label29 = new Label();
             label28 = new Label();
             label27 = new Label();
             label26 = new Label();
             label25 = new Label();
-            numericUpDown19 = new NumericUpDown();
-            numericUpDown18 = new NumericUpDown();
-            numericUpDown17 = new NumericUpDown();
-            numericUpDown16 = new NumericUpDown();
-            numericUpDown15 = new NumericUpDown();
+            Platinum = new NumericUpDown();
+            Gold = new NumericUpDown();
+            Electrum = new NumericUpDown();
+            Silver = new NumericUpDown();
+            Copper = new NumericUpDown();
             groupBox6 = new GroupBox();
             groupBox10 = new GroupBox();
-            richTextBox5 = new RichTextBox();
+            Flaws = new RichTextBox();
             groupBox9 = new GroupBox();
-            richTextBox4 = new RichTextBox();
+            Bonds = new RichTextBox();
             groupBox8 = new GroupBox();
-            richTextBox3 = new RichTextBox();
+            Ideals = new RichTextBox();
             groupBox7 = new GroupBox();
-            richTextBox2 = new RichTextBox();
+            PersonalityTraits = new RichTextBox();
             groupBox4 = new GroupBox();
-            richTextBox1 = new RichTextBox();
-            numericUpDown14 = new NumericUpDown();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            numericUpDown13 = new NumericUpDown();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            Spellcasting = new RichTextBox();
+            AttackBonus3 = new NumericUpDown();
+            DamageType3 = new TextBox();
+            VeaponName3 = new TextBox();
+            AttackBonus2 = new NumericUpDown();
+            DamageType2 = new TextBox();
+            VeaponName2 = new TextBox();
             label24 = new Label();
             label23 = new Label();
             label22 = new Label();
-            numericUpDown12 = new NumericUpDown();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            AttackBonus1 = new NumericUpDown();
+            DamageType1 = new TextBox();
+            VeaponName1 = new TextBox();
             groupBox5 = new GroupBox();
-            numericUpDown22 = new NumericUpDown();
+            Inspiration = new NumericUpDown();
             label13 = new Label();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
+            Failures3 = new CheckBox();
+            Failures2 = new CheckBox();
+            Failures1 = new CheckBox();
+            Successes3 = new CheckBox();
+            Successes2 = new CheckBox();
+            Successes1 = new CheckBox();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
             label18 = new Label();
-            Hitdie = new ComboBox();
+            HitDice = new ComboBox();
             numericUpDown11 = new NumericUpDown();
-            label17 = new Label();
+            TemporaryHP = new Label();
             label16 = new Label();
             label12 = new Label();
-            numericUpDown10 = new NumericUpDown();
-            numericUpDown9 = new NumericUpDown();
+            CurrentHP = new NumericUpDown();
+            HPMax = new NumericUpDown();
             Initiative = new Label();
-            numericUpDown8 = new NumericUpDown();
-            numericUpDown7 = new NumericUpDown();
+            Speed = new NumericUpDown();
+            ArmorClass = new NumericUpDown();
             label8 = new Label();
             label6 = new Label();
             label3 = new Label();
             groupBox3 = new GroupBox();
-            checkedListBox1 = new CheckedListBox();
+            Skills = new CheckedListBox();
             textBox7 = new TextBox();
             textBox8 = new TextBox();
             textBox9 = new TextBox();
@@ -139,6 +138,8 @@
             label35 = new Label();
             buttonSave = new Button();
             buttonClose = new Button();
+            button1 = new Button();
+            PassiveWisdom = new NumericUpDown();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown6).BeginInit();
@@ -151,30 +152,31 @@
             groupBox13.SuspendLayout();
             groupBox12.SuspendLayout();
             groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown19).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown17).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Platinum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Gold).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Electrum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Silver).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Copper).BeginInit();
             groupBox6.SuspendLayout();
             groupBox10.SuspendLayout();
             groupBox9.SuspendLayout();
             groupBox8.SuspendLayout();
             groupBox7.SuspendLayout();
             groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AttackBonus3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AttackBonus2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AttackBonus1).BeginInit();
             groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Inspiration).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CurrentHP).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)HPMax).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Speed).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ArmorClass).BeginInit();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PassiveWisdom).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -199,9 +201,9 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(PassiveWisdom);
             groupBox2.Controls.Add(label15);
             groupBox2.Controls.Add(ProficiencyBonus);
-            groupBox2.Controls.Add(PassiveWisdom);
             groupBox2.Controls.Add(numericUpDown6);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(label10);
@@ -246,15 +248,6 @@
             ProficiencyBonus.TabIndex = 19;
             ProficiencyBonus.Text = "+2";
             // 
-            // PassiveWisdom
-            // 
-            PassiveWisdom.AutoSize = true;
-            PassiveWisdom.Location = new Point(16, 496);
-            PassiveWisdom.Name = "PassiveWisdom";
-            PassiveWisdom.Size = new Size(19, 15);
-            PassiveWisdom.TabIndex = 22;
-            PassiveWisdom.Text = "13";
-            // 
             // numericUpDown6
             // 
             numericUpDown6.Location = new Point(88, 389);
@@ -277,7 +270,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(43, 496);
+            label10.Location = new Point(0, 480);
             label10.Name = "label10";
             label10.Size = new Size(92, 15);
             label10.TabIndex = 3;
@@ -486,7 +479,7 @@
             // 
             // groupBox13
             // 
-            groupBox13.Controls.Add(richTextBox8);
+            groupBox13.Controls.Add(FeaturesAndTraits);
             groupBox13.Location = new Point(12, 760);
             groupBox13.Name = "groupBox13";
             groupBox13.Size = new Size(951, 161);
@@ -494,17 +487,18 @@
             groupBox13.TabStop = false;
             groupBox13.Text = "Features and traits";
             // 
-            // richTextBox8
+            // FeaturesAndTraits
             // 
-            richTextBox8.Location = new Point(6, 22);
-            richTextBox8.Name = "richTextBox8";
-            richTextBox8.Size = new Size(939, 133);
-            richTextBox8.TabIndex = 0;
-            richTextBox8.Text = "";
+            FeaturesAndTraits.Location = new Point(6, 22);
+            FeaturesAndTraits.Name = "FeaturesAndTraits";
+            FeaturesAndTraits.Size = new Size(939, 133);
+            FeaturesAndTraits.TabIndex = 0;
+            FeaturesAndTraits.Text = "";
             // 
             // groupBox12
             // 
-            groupBox12.Controls.Add(richTextBox7);
+            groupBox12.Controls.Add(button1);
+            groupBox12.Controls.Add(OtherProficienciesAndLanguages);
             groupBox12.Location = new Point(564, 574);
             groupBox12.Name = "groupBox12";
             groupBox12.Size = new Size(399, 176);
@@ -512,27 +506,27 @@
             groupBox12.TabStop = false;
             groupBox12.Text = "Other proficiencies and languages";
             // 
-            // richTextBox7
+            // OtherProficienciesAndLanguages
             // 
-            richTextBox7.Location = new Point(6, 20);
-            richTextBox7.Name = "richTextBox7";
-            richTextBox7.Size = new Size(387, 150);
-            richTextBox7.TabIndex = 0;
-            richTextBox7.Text = "";
+            OtherProficienciesAndLanguages.Location = new Point(6, 20);
+            OtherProficienciesAndLanguages.Name = "OtherProficienciesAndLanguages";
+            OtherProficienciesAndLanguages.Size = new Size(387, 150);
+            OtherProficienciesAndLanguages.TabIndex = 0;
+            OtherProficienciesAndLanguages.Text = "";
             // 
             // groupBox11
             // 
-            groupBox11.Controls.Add(richTextBox6);
+            groupBox11.Controls.Add(BackPack);
             groupBox11.Controls.Add(label29);
             groupBox11.Controls.Add(label28);
             groupBox11.Controls.Add(label27);
             groupBox11.Controls.Add(label26);
             groupBox11.Controls.Add(label25);
-            groupBox11.Controls.Add(numericUpDown19);
-            groupBox11.Controls.Add(numericUpDown18);
-            groupBox11.Controls.Add(numericUpDown17);
-            groupBox11.Controls.Add(numericUpDown16);
-            groupBox11.Controls.Add(numericUpDown15);
+            groupBox11.Controls.Add(Platinum);
+            groupBox11.Controls.Add(Gold);
+            groupBox11.Controls.Add(Electrum);
+            groupBox11.Controls.Add(Silver);
+            groupBox11.Controls.Add(Copper);
             groupBox11.Location = new Point(12, 574);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new Size(546, 176);
@@ -540,13 +534,13 @@
             groupBox11.TabStop = false;
             groupBox11.Text = "Equipment";
             // 
-            // richTextBox6
+            // BackPack
             // 
-            richTextBox6.Location = new Point(139, 20);
-            richTextBox6.Name = "richTextBox6";
-            richTextBox6.Size = new Size(401, 150);
-            richTextBox6.TabIndex = 10;
-            richTextBox6.Text = "";
+            BackPack.Location = new Point(139, 20);
+            BackPack.Name = "BackPack";
+            BackPack.Size = new Size(401, 150);
+            BackPack.TabIndex = 10;
+            BackPack.Text = "";
             // 
             // label29
             // 
@@ -592,41 +586,42 @@
             label25.Size = new Size(44, 15);
             label25.TabIndex = 5;
             label25.Text = "copper";
+            label25.Click += label25_Click;
             // 
-            // numericUpDown19
+            // Platinum
             // 
-            numericUpDown19.Location = new Point(6, 136);
-            numericUpDown19.Name = "numericUpDown19";
-            numericUpDown19.Size = new Size(66, 23);
-            numericUpDown19.TabIndex = 4;
+            Platinum.Location = new Point(6, 136);
+            Platinum.Name = "Platinum";
+            Platinum.Size = new Size(66, 23);
+            Platinum.TabIndex = 4;
             // 
-            // numericUpDown18
+            // Gold
             // 
-            numericUpDown18.Location = new Point(6, 107);
-            numericUpDown18.Name = "numericUpDown18";
-            numericUpDown18.Size = new Size(66, 23);
-            numericUpDown18.TabIndex = 3;
+            Gold.Location = new Point(6, 107);
+            Gold.Name = "Gold";
+            Gold.Size = new Size(66, 23);
+            Gold.TabIndex = 3;
             // 
-            // numericUpDown17
+            // Electrum
             // 
-            numericUpDown17.Location = new Point(6, 78);
-            numericUpDown17.Name = "numericUpDown17";
-            numericUpDown17.Size = new Size(66, 23);
-            numericUpDown17.TabIndex = 2;
+            Electrum.Location = new Point(6, 78);
+            Electrum.Name = "Electrum";
+            Electrum.Size = new Size(66, 23);
+            Electrum.TabIndex = 2;
             // 
-            // numericUpDown16
+            // Silver
             // 
-            numericUpDown16.Location = new Point(6, 49);
-            numericUpDown16.Name = "numericUpDown16";
-            numericUpDown16.Size = new Size(66, 23);
-            numericUpDown16.TabIndex = 1;
+            Silver.Location = new Point(6, 49);
+            Silver.Name = "Silver";
+            Silver.Size = new Size(66, 23);
+            Silver.TabIndex = 1;
             // 
-            // numericUpDown15
+            // Copper
             // 
-            numericUpDown15.Location = new Point(6, 20);
-            numericUpDown15.Name = "numericUpDown15";
-            numericUpDown15.Size = new Size(66, 23);
-            numericUpDown15.TabIndex = 0;
+            Copper.Location = new Point(6, 20);
+            Copper.Name = "Copper";
+            Copper.Size = new Size(66, 23);
+            Copper.TabIndex = 0;
             // 
             // groupBox6
             // 
@@ -639,11 +634,11 @@
             groupBox6.Size = new Size(262, 565);
             groupBox6.TabIndex = 24;
             groupBox6.TabStop = false;
-            groupBox6.Text = "groupBox6";
+            groupBox6.Text = "Persoality";
             // 
             // groupBox10
             // 
-            groupBox10.Controls.Add(richTextBox5);
+            groupBox10.Controls.Add(Flaws);
             groupBox10.Location = new Point(6, 415);
             groupBox10.Name = "groupBox10";
             groupBox10.Size = new Size(250, 125);
@@ -651,17 +646,17 @@
             groupBox10.TabStop = false;
             groupBox10.Text = "Flaws";
             // 
-            // richTextBox5
+            // Flaws
             // 
-            richTextBox5.Location = new Point(0, 17);
-            richTextBox5.Name = "richTextBox5";
-            richTextBox5.Size = new Size(250, 108);
-            richTextBox5.TabIndex = 0;
-            richTextBox5.Text = "";
+            Flaws.Location = new Point(0, 17);
+            Flaws.Name = "Flaws";
+            Flaws.Size = new Size(250, 108);
+            Flaws.TabIndex = 0;
+            Flaws.Text = "";
             // 
             // groupBox9
             // 
-            groupBox9.Controls.Add(richTextBox4);
+            groupBox9.Controls.Add(Bonds);
             groupBox9.Location = new Point(6, 284);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new Size(250, 125);
@@ -669,17 +664,17 @@
             groupBox9.TabStop = false;
             groupBox9.Text = "Bonds";
             // 
-            // richTextBox4
+            // Bonds
             // 
-            richTextBox4.Location = new Point(0, 17);
-            richTextBox4.Name = "richTextBox4";
-            richTextBox4.Size = new Size(250, 108);
-            richTextBox4.TabIndex = 0;
-            richTextBox4.Text = "";
+            Bonds.Location = new Point(0, 17);
+            Bonds.Name = "Bonds";
+            Bonds.Size = new Size(250, 108);
+            Bonds.TabIndex = 0;
+            Bonds.Text = "";
             // 
             // groupBox8
             // 
-            groupBox8.Controls.Add(richTextBox3);
+            groupBox8.Controls.Add(Ideals);
             groupBox8.Location = new Point(6, 153);
             groupBox8.Name = "groupBox8";
             groupBox8.Size = new Size(250, 125);
@@ -687,17 +682,17 @@
             groupBox8.TabStop = false;
             groupBox8.Text = "Ideals";
             // 
-            // richTextBox3
+            // Ideals
             // 
-            richTextBox3.Location = new Point(0, 17);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(250, 108);
-            richTextBox3.TabIndex = 0;
-            richTextBox3.Text = "";
+            Ideals.Location = new Point(0, 17);
+            Ideals.Name = "Ideals";
+            Ideals.Size = new Size(250, 108);
+            Ideals.TabIndex = 0;
+            Ideals.Text = "";
             // 
             // groupBox7
             // 
-            groupBox7.Controls.Add(richTextBox2);
+            groupBox7.Controls.Add(PersonalityTraits);
             groupBox7.Location = new Point(6, 22);
             groupBox7.Name = "groupBox7";
             groupBox7.Size = new Size(250, 125);
@@ -705,29 +700,29 @@
             groupBox7.TabStop = false;
             groupBox7.Text = "Personality traits";
             // 
-            // richTextBox2
+            // PersonalityTraits
             // 
-            richTextBox2.Location = new Point(0, 17);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(250, 108);
-            richTextBox2.TabIndex = 0;
-            richTextBox2.Text = "";
+            PersonalityTraits.Location = new Point(0, 17);
+            PersonalityTraits.Name = "PersonalityTraits";
+            PersonalityTraits.Size = new Size(250, 108);
+            PersonalityTraits.TabIndex = 0;
+            PersonalityTraits.Text = "";
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(richTextBox1);
-            groupBox4.Controls.Add(numericUpDown14);
-            groupBox4.Controls.Add(textBox5);
-            groupBox4.Controls.Add(textBox6);
-            groupBox4.Controls.Add(numericUpDown13);
-            groupBox4.Controls.Add(textBox3);
-            groupBox4.Controls.Add(textBox4);
+            groupBox4.Controls.Add(Spellcasting);
+            groupBox4.Controls.Add(AttackBonus3);
+            groupBox4.Controls.Add(DamageType3);
+            groupBox4.Controls.Add(VeaponName3);
+            groupBox4.Controls.Add(AttackBonus2);
+            groupBox4.Controls.Add(DamageType2);
+            groupBox4.Controls.Add(VeaponName2);
             groupBox4.Controls.Add(label24);
             groupBox4.Controls.Add(label23);
             groupBox4.Controls.Add(label22);
-            groupBox4.Controls.Add(numericUpDown12);
-            groupBox4.Controls.Add(textBox2);
-            groupBox4.Controls.Add(textBox1);
+            groupBox4.Controls.Add(AttackBonus1);
+            groupBox4.Controls.Add(DamageType1);
+            groupBox4.Controls.Add(VeaponName1);
             groupBox4.Location = new Point(423, 278);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(272, 290);
@@ -735,55 +730,55 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Attacks and spellcasting";
             // 
-            // richTextBox1
+            // Spellcasting
             // 
-            richTextBox1.Location = new Point(6, 129);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(260, 145);
-            richTextBox1.TabIndex = 12;
-            richTextBox1.Text = "";
+            Spellcasting.Location = new Point(0, 129);
+            Spellcasting.Name = "Spellcasting";
+            Spellcasting.Size = new Size(260, 145);
+            Spellcasting.TabIndex = 12;
+            Spellcasting.Text = "";
             // 
-            // numericUpDown14
+            // AttackBonus3
             // 
-            numericUpDown14.Location = new Point(114, 100);
-            numericUpDown14.Name = "numericUpDown14";
-            numericUpDown14.Size = new Size(42, 23);
-            numericUpDown14.TabIndex = 11;
+            AttackBonus3.Location = new Point(114, 100);
+            AttackBonus3.Name = "AttackBonus3";
+            AttackBonus3.Size = new Size(42, 23);
+            AttackBonus3.TabIndex = 11;
             // 
-            // textBox5
+            // DamageType3
             // 
-            textBox5.Location = new Point(167, 100);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(99, 23);
-            textBox5.TabIndex = 10;
+            DamageType3.Location = new Point(167, 100);
+            DamageType3.Name = "DamageType3";
+            DamageType3.Size = new Size(99, 23);
+            DamageType3.TabIndex = 10;
             // 
-            // textBox6
+            // VeaponName3
             // 
-            textBox6.Location = new Point(6, 100);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(101, 23);
-            textBox6.TabIndex = 9;
+            VeaponName3.Location = new Point(6, 100);
+            VeaponName3.Name = "VeaponName3";
+            VeaponName3.Size = new Size(101, 23);
+            VeaponName3.TabIndex = 9;
             // 
-            // numericUpDown13
+            // AttackBonus2
             // 
-            numericUpDown13.Location = new Point(114, 71);
-            numericUpDown13.Name = "numericUpDown13";
-            numericUpDown13.Size = new Size(42, 23);
-            numericUpDown13.TabIndex = 8;
+            AttackBonus2.Location = new Point(114, 71);
+            AttackBonus2.Name = "AttackBonus2";
+            AttackBonus2.Size = new Size(42, 23);
+            AttackBonus2.TabIndex = 8;
             // 
-            // textBox3
+            // DamageType2
             // 
-            textBox3.Location = new Point(167, 71);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(99, 23);
-            textBox3.TabIndex = 7;
+            DamageType2.Location = new Point(167, 71);
+            DamageType2.Name = "DamageType2";
+            DamageType2.Size = new Size(99, 23);
+            DamageType2.TabIndex = 7;
             // 
-            // textBox4
+            // VeaponName2
             // 
-            textBox4.Location = new Point(6, 71);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(101, 23);
-            textBox4.TabIndex = 6;
+            VeaponName2.Location = new Point(6, 71);
+            VeaponName2.Name = "VeaponName2";
+            VeaponName2.Size = new Size(101, 23);
+            VeaponName2.TabIndex = 6;
             // 
             // label24
             // 
@@ -812,52 +807,52 @@
             label22.TabIndex = 3;
             label22.Text = "Name";
             // 
-            // numericUpDown12
+            // AttackBonus1
             // 
-            numericUpDown12.Location = new Point(114, 43);
-            numericUpDown12.Name = "numericUpDown12";
-            numericUpDown12.Size = new Size(42, 23);
-            numericUpDown12.TabIndex = 2;
-            numericUpDown12.ValueChanged += numericUpDown12_ValueChanged;
+            AttackBonus1.Location = new Point(114, 43);
+            AttackBonus1.Name = "AttackBonus1";
+            AttackBonus1.Size = new Size(42, 23);
+            AttackBonus1.TabIndex = 2;
+            AttackBonus1.ValueChanged += numericUpDown12_ValueChanged;
             // 
-            // textBox2
+            // DamageType1
             // 
-            textBox2.Location = new Point(167, 43);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(99, 23);
-            textBox2.TabIndex = 1;
+            DamageType1.Location = new Point(167, 43);
+            DamageType1.Name = "DamageType1";
+            DamageType1.Size = new Size(99, 23);
+            DamageType1.TabIndex = 1;
             // 
-            // textBox1
+            // VeaponName1
             // 
-            textBox1.Location = new Point(6, 43);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(101, 23);
-            textBox1.TabIndex = 0;
+            VeaponName1.Location = new Point(6, 43);
+            VeaponName1.Name = "VeaponName1";
+            VeaponName1.Size = new Size(101, 23);
+            VeaponName1.TabIndex = 0;
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(numericUpDown22);
+            groupBox5.Controls.Add(Inspiration);
             groupBox5.Controls.Add(label13);
-            groupBox5.Controls.Add(checkBox4);
-            groupBox5.Controls.Add(checkBox5);
-            groupBox5.Controls.Add(checkBox6);
-            groupBox5.Controls.Add(checkBox3);
-            groupBox5.Controls.Add(checkBox2);
-            groupBox5.Controls.Add(checkBox1);
+            groupBox5.Controls.Add(Failures3);
+            groupBox5.Controls.Add(Failures2);
+            groupBox5.Controls.Add(Failures1);
+            groupBox5.Controls.Add(Successes3);
+            groupBox5.Controls.Add(Successes2);
+            groupBox5.Controls.Add(Successes1);
             groupBox5.Controls.Add(label21);
             groupBox5.Controls.Add(label20);
             groupBox5.Controls.Add(label19);
             groupBox5.Controls.Add(label18);
-            groupBox5.Controls.Add(Hitdie);
+            groupBox5.Controls.Add(HitDice);
             groupBox5.Controls.Add(numericUpDown11);
-            groupBox5.Controls.Add(label17);
+            groupBox5.Controls.Add(TemporaryHP);
             groupBox5.Controls.Add(label16);
             groupBox5.Controls.Add(label12);
-            groupBox5.Controls.Add(numericUpDown10);
-            groupBox5.Controls.Add(numericUpDown9);
+            groupBox5.Controls.Add(CurrentHP);
+            groupBox5.Controls.Add(HPMax);
             groupBox5.Controls.Add(Initiative);
-            groupBox5.Controls.Add(numericUpDown8);
-            groupBox5.Controls.Add(numericUpDown7);
+            groupBox5.Controls.Add(Speed);
+            groupBox5.Controls.Add(ArmorClass);
             groupBox5.Controls.Add(label8);
             groupBox5.Controls.Add(label6);
             groupBox5.Controls.Add(label3);
@@ -868,12 +863,12 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Combat";
             // 
-            // numericUpDown22
+            // Inspiration
             // 
-            numericUpDown22.Location = new Point(209, 31);
-            numericUpDown22.Name = "numericUpDown22";
-            numericUpDown22.Size = new Size(44, 23);
-            numericUpDown22.TabIndex = 24;
+            Inspiration.Location = new Point(209, 31);
+            Inspiration.Name = "Inspiration";
+            Inspiration.Size = new Size(44, 23);
+            Inspiration.TabIndex = 24;
             // 
             // label13
             // 
@@ -883,60 +878,62 @@
             label13.Size = new Size(63, 15);
             label13.TabIndex = 23;
             label13.Text = "Inspiration";
+            label13.Click += label13_Click;
             // 
-            // checkBox4
+            // Failures3
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(235, 238);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(15, 14);
-            checkBox4.TabIndex = 22;
-            checkBox4.UseVisualStyleBackColor = true;
+            Failures3.AutoSize = true;
+            Failures3.Location = new Point(235, 238);
+            Failures3.Name = "Failures3";
+            Failures3.Size = new Size(15, 14);
+            Failures3.TabIndex = 22;
+            Failures3.UseVisualStyleBackColor = true;
+            Failures3.CheckedChanged += checkBox4_CheckedChanged;
             // 
-            // checkBox5
+            // Failures2
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(214, 238);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(15, 14);
-            checkBox5.TabIndex = 21;
-            checkBox5.UseVisualStyleBackColor = true;
+            Failures2.AutoSize = true;
+            Failures2.Location = new Point(214, 238);
+            Failures2.Name = "Failures2";
+            Failures2.Size = new Size(15, 14);
+            Failures2.TabIndex = 21;
+            Failures2.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // Failures1
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(193, 238);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(15, 14);
-            checkBox6.TabIndex = 20;
-            checkBox6.UseVisualStyleBackColor = true;
+            Failures1.AutoSize = true;
+            Failures1.Location = new Point(193, 238);
+            Failures1.Name = "Failures1";
+            Failures1.Size = new Size(15, 14);
+            Failures1.TabIndex = 20;
+            Failures1.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // Successes3
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(235, 216);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(15, 14);
-            checkBox3.TabIndex = 19;
-            checkBox3.UseVisualStyleBackColor = true;
+            Successes3.AutoSize = true;
+            Successes3.Location = new Point(235, 216);
+            Successes3.Name = "Successes3";
+            Successes3.Size = new Size(15, 14);
+            Successes3.TabIndex = 19;
+            Successes3.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // Successes2
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(214, 216);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(15, 14);
-            checkBox2.TabIndex = 18;
-            checkBox2.UseVisualStyleBackColor = true;
+            Successes2.AutoSize = true;
+            Successes2.Location = new Point(214, 216);
+            Successes2.Name = "Successes2";
+            Successes2.Size = new Size(15, 14);
+            Successes2.TabIndex = 18;
+            Successes2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // Successes1
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(193, 216);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
-            checkBox1.TabIndex = 17;
-            checkBox1.UseVisualStyleBackColor = true;
+            Successes1.AutoSize = true;
+            Successes1.Location = new Point(193, 216);
+            Successes1.Name = "Successes1";
+            Successes1.Size = new Size(15, 14);
+            Successes1.TabIndex = 17;
+            Successes1.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -974,14 +971,14 @@
             label18.TabIndex = 13;
             label18.Text = "Hit dice";
             // 
-            // Hitdie
+            // HitDice
             // 
-            Hitdie.FormattingEnabled = true;
-            Hitdie.Items.AddRange(new object[] { "1D4", "1D6", "1D8", "1D10", "1D12", "1D20" });
-            Hitdie.Location = new Point(7, 207);
-            Hitdie.Name = "Hitdie";
-            Hitdie.Size = new Size(82, 23);
-            Hitdie.TabIndex = 12;
+            HitDice.FormattingEnabled = true;
+            HitDice.Items.AddRange(new object[] { "1D4", "1D6", "1D8", "1D10", "1D12", "1D20" });
+            HitDice.Location = new Point(7, 207);
+            HitDice.Name = "HitDice";
+            HitDice.Size = new Size(82, 23);
+            HitDice.TabIndex = 12;
             // 
             // numericUpDown11
             // 
@@ -990,14 +987,15 @@
             numericUpDown11.Size = new Size(134, 23);
             numericUpDown11.TabIndex = 11;
             // 
-            // label17
+            // TemporaryHP
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(7, 156);
-            label17.Name = "label17";
-            label17.Size = new Size(82, 15);
-            label17.TabIndex = 10;
-            label17.Text = "Temporary HP";
+            TemporaryHP.AutoSize = true;
+            TemporaryHP.Location = new Point(7, 156);
+            TemporaryHP.Name = "TemporaryHP";
+            TemporaryHP.Size = new Size(82, 15);
+            TemporaryHP.TabIndex = 10;
+            TemporaryHP.Text = "Temporary HP";
+            TemporaryHP.Click += label17_Click;
             // 
             // label16
             // 
@@ -1017,19 +1015,19 @@
             label12.TabIndex = 8;
             label12.Text = "HP max";
             // 
-            // numericUpDown10
+            // CurrentHP
             // 
-            numericUpDown10.Location = new Point(95, 132);
-            numericUpDown10.Name = "numericUpDown10";
-            numericUpDown10.Size = new Size(134, 23);
-            numericUpDown10.TabIndex = 7;
+            CurrentHP.Location = new Point(95, 132);
+            CurrentHP.Name = "CurrentHP";
+            CurrentHP.Size = new Size(134, 23);
+            CurrentHP.TabIndex = 7;
             // 
-            // numericUpDown9
+            // HPMax
             // 
-            numericUpDown9.Location = new Point(95, 110);
-            numericUpDown9.Name = "numericUpDown9";
-            numericUpDown9.Size = new Size(134, 23);
-            numericUpDown9.TabIndex = 6;
+            HPMax.Location = new Point(95, 110);
+            HPMax.Name = "HPMax";
+            HPMax.Size = new Size(134, 23);
+            HPMax.TabIndex = 6;
             // 
             // Initiative
             // 
@@ -1040,19 +1038,19 @@
             Initiative.TabIndex = 5;
             Initiative.Text = "-1";
             // 
-            // numericUpDown8
+            // Speed
             // 
-            numericUpDown8.Location = new Point(141, 31);
-            numericUpDown8.Name = "numericUpDown8";
-            numericUpDown8.Size = new Size(51, 23);
-            numericUpDown8.TabIndex = 4;
+            Speed.Location = new Point(141, 31);
+            Speed.Name = "Speed";
+            Speed.Size = new Size(51, 23);
+            Speed.TabIndex = 4;
             // 
-            // numericUpDown7
+            // ArmorClass
             // 
-            numericUpDown7.Location = new Point(7, 31);
-            numericUpDown7.Name = "numericUpDown7";
-            numericUpDown7.Size = new Size(70, 23);
-            numericUpDown7.TabIndex = 3;
+            ArmorClass.Location = new Point(7, 31);
+            ArmorClass.Name = "ArmorClass";
+            ArmorClass.Size = new Size(70, 23);
+            ArmorClass.TabIndex = 3;
             // 
             // label8
             // 
@@ -1083,7 +1081,7 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(checkedListBox1);
+            groupBox3.Controls.Add(Skills);
             groupBox3.Location = new Point(185, 184);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(232, 384);
@@ -1092,14 +1090,14 @@
             groupBox3.Text = "Skills";
             groupBox3.Enter += groupBox3_Enter;
             // 
-            // checkedListBox1
+            // Skills
             // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "+5 Strength", "-1 Deksterity", "-2 Constitution", "AA", "BB", "CC", "7 bb", "8 rg", "9 wer", "10 g", "11", "12", "13", "14", "15", "16", "17", "18" });
-            checkedListBox1.Location = new Point(14, 22);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(201, 346);
-            checkedListBox1.TabIndex = 1;
+            Skills.FormattingEnabled = true;
+            Skills.Items.AddRange(new object[] { "+5 Strength", "-1 Deksterity", "-2 Constitution", "AA", "BB", "CC", "7 bb", "8 rg", "9 wer", "10 g", "11", "12", "13", "14", "15", "16", "17", "18" });
+            Skills.Location = new Point(14, 22);
+            Skills.Name = "Skills";
+            Skills.Size = new Size(201, 346);
+            Skills.TabIndex = 1;
             // 
             // textBox7
             // 
@@ -1222,6 +1220,22 @@
             buttonClose.Text = "Close";
             buttonClose.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(152, 19);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // PassiveWisdom
+            // 
+            PassiveWisdom.Location = new Point(104, 478);
+            PassiveWisdom.Name = "PassiveWisdom";
+            PassiveWisdom.Size = new Size(56, 23);
+            PassiveWisdom.TabIndex = 23;
+            // 
             // CharacterSheet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1263,11 +1277,11 @@
             groupBox12.ResumeLayout(false);
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown19).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown17).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Platinum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Gold).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Electrum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Silver).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Copper).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
             groupBox9.ResumeLayout(false);
@@ -1275,20 +1289,21 @@
             groupBox7.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AttackBonus3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AttackBonus2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AttackBonus1).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Inspiration).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CurrentHP).EndInit();
+            ((System.ComponentModel.ISupportInitialize)HPMax).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Speed).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ArmorClass).EndInit();
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)numericUpDown20).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PassiveWisdom).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1306,7 +1321,7 @@
         private Label label2;
         private Panel panel1;
         private GroupBox groupBox3;
-        private CheckedListBox checkedListBox1;
+        private CheckedListBox Skills;
         private NumericUpDown numericUpDown4;
         private Label Intelligence_Value;
         private Label label9;
@@ -1327,25 +1342,24 @@
         private Label label6;
         private Label label3;
         private NumericUpDown numericUpDown11;
-        private Label label17;
+        private Label TemporaryHP;
         private Label label16;
         private Label label12;
-        private NumericUpDown numericUpDown10;
-        private NumericUpDown numericUpDown9;
+        private NumericUpDown CurrentHP;
+        private NumericUpDown HPMax;
         private Label Initiative;
-        private NumericUpDown numericUpDown8;
-        private NumericUpDown numericUpDown7;
-        private ComboBox Hitdie;
+        private NumericUpDown Speed;
+        private NumericUpDown ArmorClass;
+        private ComboBox HitDice;
         private Label label15;
         private Label ProficiencyBonus;
-        private Label PassiveWisdom;
         private Label label10;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
+        private CheckBox Failures3;
+        private CheckBox Failures2;
+        private CheckBox Failures1;
+        private CheckBox Successes3;
+        private CheckBox Successes2;
+        private CheckBox Successes1;
         private Label label21;
         private Label label20;
         private Label label19;
@@ -1354,41 +1368,41 @@
         private Label label24;
         private Label label23;
         private Label label22;
-        private NumericUpDown numericUpDown12;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private RichTextBox richTextBox1;
-        private NumericUpDown numericUpDown14;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private NumericUpDown numericUpDown13;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private NumericUpDown AttackBonus1;
+        private TextBox DamageType1;
+        private TextBox VeaponName1;
+        private RichTextBox Spellcasting;
+        private NumericUpDown AttackBonus3;
+        private TextBox DamageType3;
+        private TextBox VeaponName3;
+        private NumericUpDown AttackBonus2;
+        private TextBox DamageType2;
+        private TextBox VeaponName2;
         private GroupBox groupBox12;
         private GroupBox groupBox11;
-        private RichTextBox richTextBox6;
+        private RichTextBox BackPack;
         private Label label29;
         private Label label28;
         private Label label27;
         private Label label26;
         private Label label25;
-        private NumericUpDown numericUpDown19;
-        private NumericUpDown numericUpDown18;
-        private NumericUpDown numericUpDown17;
-        private NumericUpDown numericUpDown16;
-        private NumericUpDown numericUpDown15;
+        private NumericUpDown Platinum;
+        private NumericUpDown Gold;
+        private NumericUpDown Electrum;
+        private NumericUpDown Silver;
+        private NumericUpDown Copper;
         private GroupBox groupBox6;
         private GroupBox groupBox10;
-        private RichTextBox richTextBox5;
+        private RichTextBox Flaws;
         private GroupBox groupBox9;
-        private RichTextBox richTextBox4;
+        private RichTextBox Bonds;
         private GroupBox groupBox8;
-        private RichTextBox richTextBox3;
+        private RichTextBox Ideals;
         private GroupBox groupBox7;
-        private RichTextBox richTextBox2;
+        private RichTextBox PersonalityTraits;
         private GroupBox groupBox13;
-        private RichTextBox richTextBox8;
-        private RichTextBox richTextBox7;
+        private RichTextBox FeaturesAndTraits;
+        private RichTextBox OtherProficienciesAndLanguages;
         private TextBox textBox7;
         private TextBox textBox8;
         private TextBox textBox9;
@@ -1403,8 +1417,10 @@
         private Label label34;
         private Label label35;
         private Label label13;
-        private NumericUpDown numericUpDown22;
+        private NumericUpDown Inspiration;
         private Button buttonSave;
         private Button buttonClose;
+        private Button button1;
+        private NumericUpDown PassiveWisdom;
     }
 }
