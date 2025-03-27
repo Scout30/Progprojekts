@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             groupBox1 = new GroupBox();
             SavingThrows = new CheckedListBox();
             groupBox2 = new GroupBox();
+            PassiveWisdom = new NumericUpDown();
+            bindingSourceDND = new BindingSource(components);
             label15 = new Label();
             ProficiencyBonus = new Label();
             numericUpDown6 = new NumericUpDown();
@@ -138,10 +141,11 @@
             label35 = new Label();
             buttonSave = new Button();
             buttonClose = new Button();
-            button1 = new Button();
-            PassiveWisdom = new NumericUpDown();
+            buttonDelete = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PassiveWisdom).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceDND).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
@@ -176,7 +180,6 @@
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown20).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)PassiveWisdom).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -197,7 +200,7 @@
             SavingThrows.Name = "SavingThrows";
             SavingThrows.Size = new Size(201, 130);
             SavingThrows.TabIndex = 0;
-            SavingThrows.SelectedIndexChanged += SavingThrows_SelectedIndexChanged;
+            SavingThrows.ItemCheck += SavingThrows_ItemCheck;
             // 
             // groupBox2
             // 
@@ -230,6 +233,20 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Stats";
             // 
+            // PassiveWisdom
+            // 
+            PassiveWisdom.DataBindings.Add(new Binding("Value", bindingSourceDND, "PasiveVisdom", true));
+            PassiveWisdom.Location = new Point(104, 478);
+            PassiveWisdom.Name = "PassiveWisdom";
+            PassiveWisdom.Size = new Size(56, 23);
+            PassiveWisdom.TabIndex = 23;
+            // 
+            // bindingSourceDND
+            // 
+            bindingSourceDND.AllowNew = false;
+            bindingSourceDND.DataSource = typeof(DNDModelForBinding);
+            bindingSourceDND.CurrentItemChanged += bindingSourceDND_CurrentItemChanged;
+            // 
             // label15
             // 
             label15.AutoSize = true;
@@ -242,6 +259,7 @@
             // ProficiencyBonus
             // 
             ProficiencyBonus.AutoSize = true;
+            ProficiencyBonus.DataBindings.Add(new Binding("Text", bindingSourceDND, "Proficiency", true));
             ProficiencyBonus.Location = new Point(16, 522);
             ProficiencyBonus.Name = "ProficiencyBonus";
             ProficiencyBonus.Size = new Size(21, 15);
@@ -250,6 +268,7 @@
             // 
             // numericUpDown6
             // 
+            numericUpDown6.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainCharisma", true));
             numericUpDown6.Location = new Point(88, 389);
             numericUpDown6.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown6.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -279,6 +298,7 @@
             // Charisma_Value
             // 
             Charisma_Value.AutoSize = true;
+            Charisma_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "CharismaValue", true));
             Charisma_Value.Font = new Font("Segoe UI", 25F);
             Charisma_Value.Location = new Point(13, 415);
             Charisma_Value.Name = "Charisma_Value";
@@ -288,6 +308,7 @@
             // 
             // numericUpDown4
             // 
+            numericUpDown4.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainIntelligence", true));
             numericUpDown4.Location = new Point(88, 249);
             numericUpDown4.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown4.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -299,6 +320,7 @@
             // Intelligence_Value
             // 
             Intelligence_Value.AutoSize = true;
+            Intelligence_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "IntelligenceValue", true));
             Intelligence_Value.Font = new Font("Segoe UI", 25F);
             Intelligence_Value.Location = new Point(13, 275);
             Intelligence_Value.Name = "Intelligence_Value";
@@ -318,6 +340,7 @@
             // 
             // numericUpDown5
             // 
+            numericUpDown5.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainWisdom", true));
             numericUpDown5.Location = new Point(88, 319);
             numericUpDown5.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown5.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -328,6 +351,7 @@
             // 
             // numericUpDown3
             // 
+            numericUpDown3.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainConstitution", true));
             numericUpDown3.Location = new Point(88, 181);
             numericUpDown3.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown3.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -348,6 +372,7 @@
             // Wisdom_Value
             // 
             Wisdom_Value.AutoSize = true;
+            Wisdom_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "WisdomValue", true));
             Wisdom_Value.Font = new Font("Segoe UI", 25F);
             Wisdom_Value.Location = new Point(13, 345);
             Wisdom_Value.Name = "Wisdom_Value";
@@ -358,6 +383,7 @@
             // Constitution_Value
             // 
             Constitution_Value.AutoSize = true;
+            Constitution_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "ConstitutionValue", true));
             Constitution_Value.Font = new Font("Segoe UI", 25F);
             Constitution_Value.Location = new Point(13, 205);
             Constitution_Value.Name = "Constitution_Value";
@@ -376,6 +402,7 @@
             // 
             // numericUpDown2
             // 
+            numericUpDown2.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainDexterity", true));
             numericUpDown2.Location = new Point(88, 108);
             numericUpDown2.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown2.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -387,6 +414,7 @@
             // Dexterity_Value
             // 
             Dexterity_Value.AutoSize = true;
+            Dexterity_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "DexterityValue", true));
             Dexterity_Value.Font = new Font("Segoe UI", 25F);
             Dexterity_Value.Location = new Point(13, 134);
             Dexterity_Value.Name = "Dexterity_Value";
@@ -405,6 +433,7 @@
             // 
             // numericUpDown1
             // 
+            numericUpDown1.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainStrength", true));
             numericUpDown1.Location = new Point(88, 40);
             numericUpDown1.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -416,6 +445,7 @@
             // Strength_Value
             // 
             Strength_Value.AutoSize = true;
+            Strength_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "StrengthValue", true));
             Strength_Value.Font = new Font("Segoe UI", 25F);
             Strength_Value.Location = new Point(13, 64);
             Strength_Value.Name = "Strength_Value";
@@ -445,6 +475,7 @@
             // 
             // CharakterName
             // 
+            CharakterName.DataBindings.Add(new Binding("Text", bindingSourceDND, "Name", true));
             CharakterName.Location = new Point(111, 8);
             CharakterName.Name = "CharakterName";
             CharakterName.Size = new Size(300, 23);
@@ -474,7 +505,7 @@
             panel1.Controls.Add(groupBox2);
             panel1.Location = new Point(11, 74);
             panel1.Name = "panel1";
-            panel1.Size = new Size(966, 926);
+            panel1.Size = new Size(1007, 585);
             panel1.TabIndex = 5;
             // 
             // groupBox13
@@ -497,7 +528,6 @@
             // 
             // groupBox12
             // 
-            groupBox12.Controls.Add(button1);
             groupBox12.Controls.Add(OtherProficienciesAndLanguages);
             groupBox12.Location = new Point(564, 574);
             groupBox12.Name = "groupBox12";
@@ -1098,9 +1128,11 @@
             Skills.Name = "Skills";
             Skills.Size = new Size(201, 346);
             Skills.TabIndex = 1;
+            Skills.ItemCheck += Skills_ItemCheck;
             // 
             // textBox7
             // 
+            textBox7.DataBindings.Add(new Binding("Text", bindingSourceDND, "ClassName", true));
             textBox7.Location = new Point(452, 8);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(111, 23);
@@ -1108,6 +1140,7 @@
             // 
             // textBox8
             // 
+            textBox8.DataBindings.Add(new Binding("Text", bindingSourceDND, "CharacterRace", true));
             textBox8.Location = new Point(452, 37);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(111, 23);
@@ -1115,6 +1148,7 @@
             // 
             // textBox9
             // 
+            textBox9.DataBindings.Add(new Binding("Text", bindingSourceDND, "BackgroundName", true));
             textBox9.Location = new Point(759, 8);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(142, 23);
@@ -1122,13 +1156,15 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(759, 37);
+            textBox10.DataBindings.Add(new Binding("Text", bindingSourceDND, "Aligment", true));
+            textBox10.Location = new Point(751, 36);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(142, 23);
             textBox10.TabIndex = 9;
             // 
             // textBox11
             // 
+            textBox11.DataBindings.Add(new Binding("Text", bindingSourceDND, "UserName", true));
             textBox11.Location = new Point(111, 37);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(300, 23);
@@ -1163,10 +1199,12 @@
             // 
             // numericUpDown20
             // 
+            numericUpDown20.DataBindings.Add(new Binding("Value", bindingSourceDND, "Level", true));
             numericUpDown20.Location = new Point(615, 8);
             numericUpDown20.Name = "numericUpDown20";
             numericUpDown20.Size = new Size(61, 23);
             numericUpDown20.TabIndex = 14;
+            numericUpDown20.ValueChanged += numericUpDown20_ValueChanged;
             // 
             // label33
             // 
@@ -1204,43 +1242,43 @@
             // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(14, 1003);
+            buttonSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonSave.Location = new Point(14, 662);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(144, 35);
             buttonSave.TabIndex = 19;
             buttonSave.Text = "Save";
             buttonSave.UseVisualStyleBackColor = true;
+            buttonSave.Click += buttonSave_Click;
             // 
             // buttonClose
             // 
-            buttonClose.Location = new Point(164, 1003);
+            buttonClose.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonClose.Location = new Point(164, 662);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(144, 35);
             buttonClose.TabIndex = 20;
             buttonClose.Text = "Close";
             buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click_1;
             // 
-            // button1
+            // buttonDelete
             // 
-            button1.Location = new Point(152, 19);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 1;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // PassiveWisdom
-            // 
-            PassiveWisdom.Location = new Point(104, 478);
-            PassiveWisdom.Name = "PassiveWisdom";
-            PassiveWisdom.Size = new Size(56, 23);
-            PassiveWisdom.TabIndex = 23;
+            buttonDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonDelete.Location = new Point(874, 665);
+            buttonDelete.Name = "buttonDelete";
+            buttonDelete.Size = new Size(144, 35);
+            buttonDelete.TabIndex = 21;
+            buttonDelete.Text = "Delete";
+            buttonDelete.UseVisualStyleBackColor = true;
+            buttonDelete.Click += buttonDelete_Click;
             // 
             // CharacterSheet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(989, 1039);
+            ClientSize = new Size(1030, 698);
+            Controls.Add(buttonDelete);
             Controls.Add(buttonClose);
             Controls.Add(buttonSave);
             Controls.Add(label35);
@@ -1263,9 +1301,12 @@
             MinimumSize = new Size(1005, 737);
             Name = "CharacterSheet";
             Text = "Character Sheet";
+            Load += CharacterSheet_Load;
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PassiveWisdom).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceDND).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown6).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown5).EndInit();
@@ -1303,7 +1344,6 @@
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)numericUpDown20).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)PassiveWisdom).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1420,7 +1460,8 @@
         private NumericUpDown Inspiration;
         private Button buttonSave;
         private Button buttonClose;
-        private Button button1;
         private NumericUpDown PassiveWisdom;
+        private BindingSource bindingSourceDND;
+        private Button buttonDelete;
     }
 }

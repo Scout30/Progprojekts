@@ -30,16 +30,14 @@
         {
             components = new System.ComponentModel.Container();
             label1 = new Label();
-            bindingSource1 = new BindingSource(components);
-            dataGridView1 = new DataGridView();
-            dNDListRowBindingSource = new BindingSource(components);
+            SarakstaTabula = new DataGridView();
             idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             userNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             characterRaceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             editDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dNDListRowBindingSource = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)SarakstaTabula).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dNDListRowBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -52,26 +50,22 @@
             label1.TabIndex = 0;
             label1.Text = "Dungeons && Dragons";
             // 
-            // dataGridView1
+            // SarakstaTabula
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.AllowUserToOrderColumns = true;
-            dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, userNameDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, characterRaceDataGridViewTextBoxColumn, editDateDataGridViewTextBoxColumn });
-            dataGridView1.DataSource = dNDListRowBindingSource;
-            dataGridView1.Location = new Point(12, 37);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(915, 459);
-            dataGridView1.TabIndex = 1;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // dNDListRowBindingSource
-            // 
-            dNDListRowBindingSource.DataSource = typeof(DNDListRow);
+            SarakstaTabula.AllowUserToOrderColumns = true;
+            SarakstaTabula.AllowUserToResizeRows = false;
+            SarakstaTabula.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            SarakstaTabula.AutoGenerateColumns = false;
+            SarakstaTabula.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            SarakstaTabula.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, userNameDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, characterRaceDataGridViewTextBoxColumn, editDateDataGridViewTextBoxColumn });
+            SarakstaTabula.DataSource = dNDListRowBindingSource;
+            SarakstaTabula.Location = new Point(12, 37);
+            SarakstaTabula.Name = "SarakstaTabula";
+            SarakstaTabula.Size = new Size(915, 459);
+            SarakstaTabula.TabIndex = 1;
+            SarakstaTabula.CellContentClick += dataGridView1_CellContentClick;
+            SarakstaTabula.CellDoubleClick += dataGridView1_CellContentClick;
+           
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -106,17 +100,21 @@
             editDateDataGridViewTextBoxColumn.HeaderText = "Edit date";
             editDateDataGridViewTextBoxColumn.Name = "editDateDataGridViewTextBoxColumn";
             // 
+            // dNDListRowBindingSource
+            // 
+            dNDListRowBindingSource.DataSource = typeof(DNDListRow);
+            // 
             // DNDList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(949, 558);
-            Controls.Add(dataGridView1);
+            Controls.Add(SarakstaTabula);
             Controls.Add(label1);
             Name = "DNDList";
             Text = "DND entry list";
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += DNDList_Load;
+            ((System.ComponentModel.ISupportInitialize)SarakstaTabula).EndInit();
             ((System.ComponentModel.ISupportInitialize)dNDListRowBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -125,8 +123,7 @@
         #endregion
 
         private Label label1;
-        private BindingSource bindingSource1;
-        private DataGridView dataGridView1;
+        private DataGridView SarakstaTabula;
         private BindingSource dNDListRowBindingSource;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
