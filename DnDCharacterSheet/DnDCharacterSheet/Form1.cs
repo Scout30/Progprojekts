@@ -193,40 +193,41 @@ namespace DnDCharacterSheet
                         switch ((SavingThrowChoises)x)
                         {
                             case SavingThrowChoises.Strength:
-                                cipars = dati.StrengthValue;
+                                cipars = dati.StrengthValue + (dati.SavingThrows_Strength ?dati.Proficiency:0);
                                 SavingThrows.SetItemChecked(y, dati.SavingThrows_Strength);
                                 break;
                             case SavingThrowChoises.Dexterity:
-                                cipars = dati.DexterityValue;
+                                cipars = dati.DexterityValue + (dati.SavingThrows_Dexterity ? dati.Proficiency : 0);
                                 SavingThrows.SetItemChecked(y, dati.SavingThrows_Dexterity);
                                 break;
 
                             case SavingThrowChoises.Constitution:
-                                cipars = dati.ConstitutionValue;
+                                cipars = dati.ConstitutionValue + (dati.SavingThrows_Constitution ? dati.Proficiency : 0);
                                 SavingThrows.SetItemChecked(y, dati.SavingThrows_Constitution);
                                 break;
 
                             case SavingThrowChoises.Intelligence:
-                                cipars = dati.IntelligenceValue;
+                                cipars = dati.IntelligenceValue + (dati.SavingThrows_Intelligence ? dati.Proficiency : 0);
                                 SavingThrows.SetItemChecked(y, dati.SavingThrows_Intelligence);
                                 break;
 
                             case SavingThrowChoises.Wisdom:
-                                cipars = dati.WisdomValue;
+                                cipars = dati.WisdomValue + (dati.SavingThrows_Wisdom ? dati.Proficiency : 0);
                                 SavingThrows.SetItemChecked(y, dati.SavingThrows_Wisdom);
                                 break;
 
                             case SavingThrowChoises.Charisma:
-                                cipars = dati.CharismaValue;
+                                cipars = dati.CharismaValue + (dati.SavingThrows_Charisma ? dati.Proficiency : 0);
                                 SavingThrows.SetItemChecked(y, dati.SavingThrows_Charisma);
                                 break;
                         }
 
-                        SavingThrows.Items[y] = string.Format("({0}) {1}", cipars, xText);
-
+                        SavingThrows.Items[y] = string.Format("({0}) {1}", cipars , xText);
+                        
                         continue;
                     }
                 }
+             
             }
 
             foreach (var x in Enum.GetValues(typeof(SkillChoises)))
@@ -240,75 +241,75 @@ namespace DnDCharacterSheet
                         switch ((SkillChoises)x)
                         {
                             case SkillChoises.Acrobatic:
-                                cipars = dati.DexterityValue;
+                                cipars = dati.DexterityValue + (dati.Skills_Acrobatic ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Acrobatic);
                                 break;
                             case SkillChoises.Animal_handling:
-                                cipars = dati.WisdomValue;
+                                cipars = dati.WisdomValue + (dati.Skills_Animal_handling ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Animal_handling);
                                 break;
                             case SkillChoises.Arcana:
-                                cipars = dati.IntelligenceValue;
+                                cipars = dati.IntelligenceValue + (dati.Skills_Arcana ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Arcana);
                                 break;
                             case SkillChoises.Athletic:
-                                cipars = dati.StrengthValue;
+                                cipars = dati.StrengthValue + (dati.Skills_Athletic ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Athletic);
                                 break;
                             case SkillChoises.Deception:
-                                cipars = dati.CharismaValue;
+                                cipars = dati.CharismaValue + (dati.Skills_Deception ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Deception);
                                 break;
                             case SkillChoises.History:
-                                cipars = dati.IntelligenceValue;
+                                cipars = dati.IntelligenceValue + (dati.Skills_History ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_History);
                                 break;
                             case SkillChoises.Insight:
-                                cipars = dati.WisdomValue;
+                                cipars = dati.WisdomValue + (dati.Skills_Insight ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Insight);
                                 break;
                             case SkillChoises.Intimidation:
-                                cipars = dati.CharismaValue;
+                                cipars = dati.CharismaValue + (dati.Skills_Intimidation ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Intimidation);
                                 break;
                             case SkillChoises.Investigation:
-                                cipars = dati.IntelligenceValue;
+                                cipars = dati.IntelligenceValue + (dati.Skills_Investigation ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Investigation);
                                 break;
                             case SkillChoises.Medicine:
-                                cipars = dati.WisdomValue;
+                                cipars = dati.WisdomValue + (dati.Skills_Medicine ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Medicine);
                                 break;
                             case SkillChoises.Nature:
-                                cipars = dati.IntelligenceValue;
+                                cipars = dati.IntelligenceValue + (dati.Skills_Nature ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Nature);
                                 break;
                             case SkillChoises.Perception:
-                                cipars = dati.WisdomValue;
+                                cipars = dati.WisdomValue + (dati.Skills_Perception ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Perception);
                                 break;
                             case SkillChoises.Performance:
-                                cipars = dati.CharismaValue;
+                                cipars = dati.CharismaValue + (dati.Skills_Performance ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Performance);
                                 break;
                             case SkillChoises.Persuasion:
-                                cipars = dati.CharismaValue;
+                                cipars = dati.CharismaValue + (dati.Skills_Persuasion ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Persuasion);
                                 break;
                             case SkillChoises.Religion:
-                                cipars = dati.IntelligenceValue;
+                                cipars = dati.IntelligenceValue + (dati.Skills_Religion ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Religion);
                                 break;
                             case SkillChoises.Sleight_of_hand:
-                                cipars = dati.DexterityValue;
+                                cipars = dati.DexterityValue + (dati.Skills_Sleight_of_hand ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Sleight_of_hand);
                                 break;
                             case SkillChoises.Stealth:
-                                cipars = dati.DexterityValue;
+                                cipars = dati.DexterityValue + (dati.Skills_Stealth ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Stealth);
                                 break;
                             case SkillChoises.Survival:
-                                cipars = dati.WisdomValue;
+                                cipars = dati.WisdomValue + (dati.Skills_Survival ? dati.Proficiency : 0);
                                 Skills.SetItemChecked(y, dati.Skills_Survival);
                                 break;
                         }
@@ -393,6 +394,7 @@ namespace DnDCharacterSheet
                     continue;
                 }
             }
+          // bindingSourceDND.ResetCurrentItem();
             //if (e.NewValue != e.CurrentValue)
             //{
             //    bindingSourceDND.ResetBindings(false);

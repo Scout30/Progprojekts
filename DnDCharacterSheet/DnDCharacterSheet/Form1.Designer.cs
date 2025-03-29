@@ -520,6 +520,7 @@
             // 
             // FeaturesAndTraits
             // 
+            FeaturesAndTraits.DataBindings.Add(new Binding("Text", bindingSourceDND, "FeaturesAndTraits", true));
             FeaturesAndTraits.Location = new Point(6, 22);
             FeaturesAndTraits.Name = "FeaturesAndTraits";
             FeaturesAndTraits.Size = new Size(939, 133);
@@ -538,6 +539,7 @@
             // 
             // OtherProficienciesAndLanguages
             // 
+            OtherProficienciesAndLanguages.DataBindings.Add(new Binding("Text", bindingSourceDND, "OtherProficienciesAndLanguages", true));
             OtherProficienciesAndLanguages.Location = new Point(6, 20);
             OtherProficienciesAndLanguages.Name = "OtherProficienciesAndLanguages";
             OtherProficienciesAndLanguages.Size = new Size(387, 150);
@@ -566,6 +568,7 @@
             // 
             // BackPack
             // 
+            BackPack.DataBindings.Add(new Binding("Text", bindingSourceDND, "BackPack", true));
             BackPack.Location = new Point(139, 20);
             BackPack.Name = "BackPack";
             BackPack.Size = new Size(401, 150);
@@ -620,6 +623,7 @@
             // 
             // Platinum
             // 
+            Platinum.DataBindings.Add(new Binding("Value", bindingSourceDND, "Platinum", true));
             Platinum.Location = new Point(6, 136);
             Platinum.Name = "Platinum";
             Platinum.Size = new Size(66, 23);
@@ -627,6 +631,7 @@
             // 
             // Gold
             // 
+            Gold.DataBindings.Add(new Binding("Value", bindingSourceDND, "Gold", true));
             Gold.Location = new Point(6, 107);
             Gold.Name = "Gold";
             Gold.Size = new Size(66, 23);
@@ -634,6 +639,7 @@
             // 
             // Electrum
             // 
+            Electrum.DataBindings.Add(new Binding("Value", bindingSourceDND, "Electrum", true));
             Electrum.Location = new Point(6, 78);
             Electrum.Name = "Electrum";
             Electrum.Size = new Size(66, 23);
@@ -641,6 +647,7 @@
             // 
             // Silver
             // 
+            Silver.DataBindings.Add(new Binding("Value", bindingSourceDND, "Silver", true));
             Silver.Location = new Point(6, 49);
             Silver.Name = "Silver";
             Silver.Size = new Size(66, 23);
@@ -648,6 +655,7 @@
             // 
             // Copper
             // 
+            Copper.DataBindings.Add(new Binding("Value", bindingSourceDND, "Copper", true));
             Copper.Location = new Point(6, 20);
             Copper.Name = "Copper";
             Copper.Size = new Size(66, 23);
@@ -678,6 +686,7 @@
             // 
             // Flaws
             // 
+            Flaws.DataBindings.Add(new Binding("Text", bindingSourceDND, "Flaws", true));
             Flaws.Location = new Point(0, 17);
             Flaws.Name = "Flaws";
             Flaws.Size = new Size(250, 108);
@@ -696,6 +705,7 @@
             // 
             // Bonds
             // 
+            Bonds.DataBindings.Add(new Binding("Text", bindingSourceDND, "Bonds", true));
             Bonds.Location = new Point(0, 17);
             Bonds.Name = "Bonds";
             Bonds.Size = new Size(250, 108);
@@ -714,6 +724,7 @@
             // 
             // Ideals
             // 
+            Ideals.DataBindings.Add(new Binding("Text", bindingSourceDND, "Ideals", true));
             Ideals.Location = new Point(0, 17);
             Ideals.Name = "Ideals";
             Ideals.Size = new Size(250, 108);
@@ -732,6 +743,7 @@
             // 
             // PersonalityTraits
             // 
+            PersonalityTraits.DataBindings.Add(new Binding("Text", bindingSourceDND, "PersonalityTraits", true));
             PersonalityTraits.Location = new Point(0, 17);
             PersonalityTraits.Name = "PersonalityTraits";
             PersonalityTraits.Size = new Size(250, 108);
@@ -762,6 +774,7 @@
             // 
             // Spellcasting
             // 
+            Spellcasting.DataBindings.Add(new Binding("Text", bindingSourceDND, "Spellcasting", true));
             Spellcasting.Location = new Point(0, 129);
             Spellcasting.Name = "Spellcasting";
             Spellcasting.Size = new Size(260, 145);
@@ -770,6 +783,7 @@
             // 
             // AttackBonus3
             // 
+            AttackBonus3.DataBindings.Add(new Binding("Value", bindingSourceDND, "AttackBonus3", true));
             AttackBonus3.Location = new Point(114, 100);
             AttackBonus3.Name = "AttackBonus3";
             AttackBonus3.Size = new Size(42, 23);
@@ -777,6 +791,7 @@
             // 
             // DamageType3
             // 
+            DamageType3.DataBindings.Add(new Binding("Text", bindingSourceDND, "DamageType3", true));
             DamageType3.Location = new Point(167, 100);
             DamageType3.Name = "DamageType3";
             DamageType3.Size = new Size(99, 23);
@@ -784,6 +799,7 @@
             // 
             // VeaponName3
             // 
+            VeaponName3.DataBindings.Add(new Binding("Text", bindingSourceDND, "VeaponName3", true));
             VeaponName3.Location = new Point(6, 100);
             VeaponName3.Name = "VeaponName3";
             VeaponName3.Size = new Size(101, 23);
@@ -791,6 +807,7 @@
             // 
             // AttackBonus2
             // 
+            AttackBonus2.DataBindings.Add(new Binding("Value", bindingSourceDND, "AttackBonus2", true));
             AttackBonus2.Location = new Point(114, 71);
             AttackBonus2.Name = "AttackBonus2";
             AttackBonus2.Size = new Size(42, 23);
@@ -798,6 +815,7 @@
             // 
             // DamageType2
             // 
+            DamageType2.DataBindings.Add(new Binding("Text", bindingSourceDND, "DamageType2", true));
             DamageType2.Location = new Point(167, 71);
             DamageType2.Name = "DamageType2";
             DamageType2.Size = new Size(99, 23);
@@ -805,6 +823,7 @@
             // 
             // VeaponName2
             // 
+            VeaponName2.DataBindings.Add(new Binding("Text", bindingSourceDND, "VeaponName2", true));
             VeaponName2.Location = new Point(6, 71);
             VeaponName2.Name = "VeaponName2";
             VeaponName2.Size = new Size(101, 23);
@@ -839,6 +858,7 @@
             // 
             // AttackBonus1
             // 
+            AttackBonus1.DataBindings.Add(new Binding("Value", bindingSourceDND, "AttackBonus1", true));
             AttackBonus1.Location = new Point(114, 43);
             AttackBonus1.Name = "AttackBonus1";
             AttackBonus1.Size = new Size(42, 23);
@@ -847,6 +867,7 @@
             // 
             // DamageType1
             // 
+            DamageType1.DataBindings.Add(new Binding("Text", bindingSourceDND, "DamageType1", true));
             DamageType1.Location = new Point(167, 43);
             DamageType1.Name = "DamageType1";
             DamageType1.Size = new Size(99, 23);
@@ -854,6 +875,7 @@
             // 
             // VeaponName1
             // 
+            VeaponName1.DataBindings.Add(new Binding("Text", bindingSourceDND, "VeaponName1", true));
             VeaponName1.Location = new Point(6, 43);
             VeaponName1.Name = "VeaponName1";
             VeaponName1.Size = new Size(101, 23);
@@ -895,6 +917,7 @@
             // 
             // Inspiration
             // 
+            Inspiration.DataBindings.Add(new Binding("Value", bindingSourceDND, "Inspiration", true));
             Inspiration.Location = new Point(209, 31);
             Inspiration.Name = "Inspiration";
             Inspiration.Size = new Size(44, 23);
@@ -913,6 +936,7 @@
             // Failures3
             // 
             Failures3.AutoSize = true;
+            Failures3.DataBindings.Add(new Binding("Checked", bindingSourceDND, "Failures3", true));
             Failures3.Location = new Point(235, 238);
             Failures3.Name = "Failures3";
             Failures3.Size = new Size(15, 14);
@@ -923,6 +947,7 @@
             // Failures2
             // 
             Failures2.AutoSize = true;
+            Failures2.DataBindings.Add(new Binding("Checked", bindingSourceDND, "Failures2", true));
             Failures2.Location = new Point(214, 238);
             Failures2.Name = "Failures2";
             Failures2.Size = new Size(15, 14);
@@ -932,6 +957,7 @@
             // Failures1
             // 
             Failures1.AutoSize = true;
+            Failures1.DataBindings.Add(new Binding("Checked", bindingSourceDND, "Failures1", true));
             Failures1.Location = new Point(193, 238);
             Failures1.Name = "Failures1";
             Failures1.Size = new Size(15, 14);
@@ -941,6 +967,7 @@
             // Successes3
             // 
             Successes3.AutoSize = true;
+            Successes3.DataBindings.Add(new Binding("Checked", bindingSourceDND, "Successes3", true));
             Successes3.Location = new Point(235, 216);
             Successes3.Name = "Successes3";
             Successes3.Size = new Size(15, 14);
@@ -950,6 +977,7 @@
             // Successes2
             // 
             Successes2.AutoSize = true;
+            Successes2.DataBindings.Add(new Binding("Checked", bindingSourceDND, "Successes2", true));
             Successes2.Location = new Point(214, 216);
             Successes2.Name = "Successes2";
             Successes2.Size = new Size(15, 14);
@@ -959,6 +987,7 @@
             // Successes1
             // 
             Successes1.AutoSize = true;
+            Successes1.DataBindings.Add(new Binding("Checked", bindingSourceDND, "Successes1", true));
             Successes1.Location = new Point(193, 216);
             Successes1.Name = "Successes1";
             Successes1.Size = new Size(15, 14);
@@ -1003,6 +1032,7 @@
             // 
             // HitDice
             // 
+            HitDice.DataBindings.Add(new Binding("SelectedValue", bindingSourceDND, "HitDice", true));
             HitDice.FormattingEnabled = true;
             HitDice.Items.AddRange(new object[] { "1D4", "1D6", "1D8", "1D10", "1D12", "1D20" });
             HitDice.Location = new Point(7, 207);
@@ -1012,6 +1042,7 @@
             // 
             // numericUpDown11
             // 
+            numericUpDown11.DataBindings.Add(new Binding("DataContext", bindingSourceDND, "TemporaryHP", true));
             numericUpDown11.Location = new Point(95, 154);
             numericUpDown11.Name = "numericUpDown11";
             numericUpDown11.Size = new Size(134, 23);
@@ -1047,6 +1078,7 @@
             // 
             // CurrentHP
             // 
+            CurrentHP.DataBindings.Add(new Binding("Value", bindingSourceDND, "CurrentHP", true));
             CurrentHP.Location = new Point(95, 132);
             CurrentHP.Name = "CurrentHP";
             CurrentHP.Size = new Size(134, 23);
@@ -1054,6 +1086,7 @@
             // 
             // HPMax
             // 
+            HPMax.DataBindings.Add(new Binding("Value", bindingSourceDND, "HPMax", true));
             HPMax.Location = new Point(95, 110);
             HPMax.Name = "HPMax";
             HPMax.Size = new Size(134, 23);
@@ -1070,6 +1103,7 @@
             // 
             // Speed
             // 
+            Speed.DataBindings.Add(new Binding("Value", bindingSourceDND, "Speed", true));
             Speed.Location = new Point(141, 31);
             Speed.Name = "Speed";
             Speed.Size = new Size(51, 23);
@@ -1077,6 +1111,7 @@
             // 
             // ArmorClass
             // 
+            ArmorClass.DataBindings.Add(new Binding("Value", bindingSourceDND, "ArmorClass", true));
             ArmorClass.Location = new Point(7, 31);
             ArmorClass.Name = "ArmorClass";
             ArmorClass.Size = new Size(70, 23);
@@ -1157,7 +1192,7 @@
             // textBox10
             // 
             textBox10.DataBindings.Add(new Binding("Text", bindingSourceDND, "Aligment", true));
-            textBox10.Location = new Point(751, 36);
+            textBox10.Location = new Point(759, 34);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(142, 23);
             textBox10.TabIndex = 9;

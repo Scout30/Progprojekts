@@ -66,7 +66,6 @@
             // 
             // txtUsername
             // 
-            txtUsername.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtUsername.Location = new Point(12, 27);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(99, 23);
@@ -95,12 +94,13 @@
             btnCreateNewAccount.TabIndex = 6;
             btnCreateNewAccount.Text = "Create account";
             btnCreateNewAccount.UseVisualStyleBackColor = true;
+            btnCreateNewAccount.Click += btnCreateNewAccount_Click;
             // 
             // CreateAccount
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(766, 334);
+            ClientSize = new Size(392, 294);
             Controls.Add(btnCreateNewAccount);
             Controls.Add(txt2Password);
             Controls.Add(txtPassword);

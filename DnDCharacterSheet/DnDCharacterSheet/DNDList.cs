@@ -35,14 +35,11 @@ namespace DnDCharacterSheet
                     var dati = rinda.DataBoundItem as DNDListRow;
                     if (dati == null)
                     {
-                        dati= new DNDListRow() { Id=0};
+                        dati = new DNDListRow() { Id = 0 };
 
                     }
-                    //frm.UzstādaDatus(  new DNDModelForBinding() { Name = "das" ,UserName="abc"} );
-                    //frm.DatuSaikne.DataSource = new List<DNDModelForBinding> { new DNDModelForBinding() { Name="das"} ,  
-                    //   };
-                    frm.UzstādaDatus(DatuBāze.DabūtDbInstanci.NolasītDNDIerakstu(dati.Id)??new DNDModelForBinding { UserName="ABC" }
-                        );
+
+                    frm.UzstādaDatus(DatuBāze.DabūtDbInstanci.NolasītDNDIerakstu(dati.Id) ?? new DNDModelForBinding());
                     //Uzliek atsauci uz izsaucošo formu, lai varētu atjaunināt datus sarakstā
                     frm.SarakstaForma = this;
                     frm.ShowDialog();
@@ -67,13 +64,88 @@ namespace DnDCharacterSheet
         {
 
             if (Program.UserId == null)
-            {                
+            {
                 return;
             }
             dati = DatuBāze.DabūtDbInstanci.NolasītDNDSarakstu(Program.UserId.Value);
             dNDListRowBindingSource.DataSource = dati;
             dNDListRowBindingSource.ResetBindings(true);
+
+            if (Program.IsAdmin)
+            {
+
+                var lietotaji = DatuBāze.DabūtDbInstanci.GetAllUses();
+                systemUsersBindingSource.DataSource = lietotaji;
+                systemUsersBindingSource.ResetBindings(true);
+                
+            } else
+            {
+                systemUsersBindingSource.DataSource = null;
+                tabControl1.TabPages.Remove(tabPage2);
+
+            }
+
         }
-    
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 4)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    var users = dataGridView1.Rows[e.RowIndex];
+
+                    using (EditPassword frm = new EditPassword())
+                    {
+                        var dati = users.DataBoundItem as SystemUsers;
+                        if (dati == null)
+                        {
+                            return;
+                        }
+                        frm.UserId = dati.UserId;
+                        frm.ShowDialog();
+                    }
+                }
+
+            }
+        }
+
+        private void dataGridView1_CellValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 3)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    var users = dataGridView1.Rows[e.RowIndex];
+
+                    using (EditPassword frm = new EditPassword())
+                    {
+                        var dati = users.DataBoundItem as SystemUsers;
+                        if (dati == null)
+                        {
+                            return;
+                        }
+                        DatuBāze.DabūtDbInstanci.UserSave(dati.UserId, dati.IsAdmin);
+                    }
+                }
+
+            }
+        }
+
+        private void buttonAddDnd_Click(object sender, EventArgs e)
+        {
+            using (CharacterSheet frm = new CharacterSheet())
+            { 
+                frm.UzstādaDatus(  new DNDModelForBinding());
+                //Uzliek atsauci uz izsaucošo formu, lai varētu atjaunināt datus sarakstā
+                frm.SarakstaForma = this;
+                frm.ShowDialog();
+            }
+        }
     }
 }

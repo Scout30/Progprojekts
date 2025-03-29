@@ -44,3 +44,4 @@ C:\Users\Lietotajs\source\repos\DnDCharacterSheet\DnDCharacterSheet\bin\Debug\ne
 C:\Users\Lietotajs\source\repos\DnDCharacterSheet\DnDCharacterSheet\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Lietotajs\source\repos\DnDCharacterSheet\DnDCharacterSheet\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Lietotajs\source\repos\DnDCharacterSheet\DnDCharacterSheet\obj\Debug\net8.0-windows\DnDChara.96E9E2E8.Up2Date
+C:\Users\Lietotajs\source\repos\DnDCharacterSheet\DnDCharacterSheet\obj\Debug\net8.0-windows\DnDCharacterSheet.EditPassword.resources

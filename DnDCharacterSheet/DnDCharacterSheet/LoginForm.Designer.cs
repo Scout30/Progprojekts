@@ -60,6 +60,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(100, 23);
             txtUsername.TabIndex = 0;
+        
             // 
             // txtPassword
             // 
@@ -87,12 +88,13 @@
             btnCreateNewAccount.TabIndex = 3;
             btnCreateNewAccount.Text = "Create new account";
             btnCreateNewAccount.UseVisualStyleBackColor = true;
+            btnCreateNewAccount.Click += btnCreateNewAccount_Click;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(185, 193);
             Controls.Add(btnCreateNewAccount);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
