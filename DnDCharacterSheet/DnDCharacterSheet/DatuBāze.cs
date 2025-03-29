@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Data;
-using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
-using Microsoft.VisualBasic.ApplicationServices;
-using System.Drawing;
-using System.Data.SqlTypes;
 using System.Security.Cryptography;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+
 
 namespace DnDCharacterSheet
 {
@@ -412,7 +404,7 @@ namespace DnDCharacterSheet
                 createUserCommand.CommandText = @"
                     SELECT ID, Username, IsAdmin
                     from  Users
-                    order by Username
+                    order by ID
                 ";               
 
                 var lasitajs=createUserCommand.ExecuteReader();

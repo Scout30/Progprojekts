@@ -42,11 +42,12 @@
             buttonAddDnd = new Button();
             tabPage2 = new TabPage();
             dataGridView1 = new DataGridView();
+            systemUsersBindingSource = new BindingSource(components);
             userIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             userNameDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             IsAdmin = new DataGridViewCheckBoxColumn();
             Password = new DataGridViewButtonColumn();
-            systemUsersBindingSource = new BindingSource(components);
+            Delete = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)SarakstaTabula).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dNDListRowBindingSource).BeginInit();
             tabControl1.SuspendLayout();
@@ -172,7 +173,7 @@
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { userIdDataGridViewTextBoxColumn, userNameDataGridViewTextBoxColumn1, IsAdmin, Password });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { userIdDataGridViewTextBoxColumn, userNameDataGridViewTextBoxColumn1, IsAdmin, Password, Delete });
             dataGridView1.DataSource = systemUsersBindingSource;
             dataGridView1.Location = new Point(6, 6);
             dataGridView1.Name = "dataGridView1";
@@ -180,6 +181,10 @@
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick_1;
             dataGridView1.CellValidated += dataGridView1_CellValidated;
+            // 
+            // systemUsersBindingSource
+            // 
+            systemUsersBindingSource.DataSource = typeof(SystemUsers);
             // 
             // userIdDataGridViewTextBoxColumn
             // 
@@ -212,9 +217,13 @@
             Password.UseColumnTextForButtonValue = true;
             Password.Width = 150;
             // 
-            // systemUsersBindingSource
+            // Delete
             // 
-            systemUsersBindingSource.DataSource = typeof(SystemUsers);
+            Delete.DataPropertyName = "UserId";
+            Delete.HeaderText = "";
+            Delete.Name = "Delete";
+            Delete.Text = "Delete";
+            Delete.UseColumnTextForButtonValue = true;
             // 
             // DNDList
             // 
@@ -252,13 +261,11 @@
         private DataGridView dataGridView1;
         private BindingSource systemUsersBindingSource;
         private DataGridViewCheckBoxColumn isAdminDataGridViewCheckBoxColumn;
+        private Button buttonAddDnd;
         private DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn1;
         private DataGridViewCheckBoxColumn IsAdmin;
         private DataGridViewButtonColumn Password;
-        private Button buttonAddDnd;
-
-        
-
+        private DataGridViewButtonColumn Delete;
     }
 }

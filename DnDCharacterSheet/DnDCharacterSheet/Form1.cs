@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Common;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿
 
 namespace DnDCharacterSheet
 {
@@ -29,6 +18,16 @@ namespace DnDCharacterSheet
             {
                 Skills.Items.Add(x);
             }
+            
+            HitDice.Items.Clear();
+            HitDice.ValueMember = "Key";
+            HitDice.DisplayMember = "Value";
+            var list = new List<KeyValuePair<int, string>>();
+            foreach (var X in Enum.GetValues(typeof(DiceTyps)))
+            {
+                list.Add(new KeyValuePair<int, string>((int)X, Enum.GetName(typeof(DiceTyps), X)));
+            }
+            HitDice.DataSource = list;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -102,6 +101,22 @@ namespace DnDCharacterSheet
             if (dati != null)
             {
 
+                if (string.IsNullOrEmpty(dati.Name))
+                {
+                    MessageBox.Show("Name is reqired!");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(dati.ClassName))
+                {
+                    MessageBox.Show("Class name is reqired!");
+                    return;
+                }
+                if (string.IsNullOrEmpty(dati.CharacterRace))
+                {
+                    MessageBox.Show("Character race is reqired!");
+                    return;
+                }
                 DatuBāze.DabūtDbInstanci.SaglabātDNDIerakstu(Program.UserId ?? 1, dati);
                 MessageBox.Show("Data saved!");
                 SarakstaForma.IelasītDatus();
@@ -133,6 +148,10 @@ namespace DnDCharacterSheet
         {
             var dati = bindingSourceDND.Current as DNDModelForBinding;
             if (dati == null)
+            {
+                return;
+            }
+            if (e.NewValue == e.CurrentValue)
             {
                 return;
             }
@@ -181,7 +200,7 @@ namespace DnDCharacterSheet
             {
                 return;
             }
-
+            
             foreach (var x in Enum.GetValues(typeof(SavingThrowChoises)))
             {
                 var xText = Enum.GetName(typeof(SavingThrowChoises), x);
@@ -328,6 +347,11 @@ namespace DnDCharacterSheet
             {
                 return;
             }
+            if (e.NewValue == e.CurrentValue)
+            {
+                return;
+            }
+
             foreach (var x in Enum.GetValues(typeof(SkillChoises)))
             {
                 var xText = Enum.GetName(typeof(SkillChoises), x);
@@ -394,7 +418,7 @@ namespace DnDCharacterSheet
                     continue;
                 }
             }
-          // bindingSourceDND.ResetCurrentItem();
+            //bindingSourceDND.ResetCurrentItem();
             //if (e.NewValue != e.CurrentValue)
             //{
             //    bindingSourceDND.ResetBindings(false);

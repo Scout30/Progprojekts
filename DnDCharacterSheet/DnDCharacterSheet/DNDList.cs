@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.DataFormats;
 
@@ -94,7 +95,8 @@ namespace DnDCharacterSheet
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 4)
+            //Paroles maiņa
+            if (e.ColumnIndex ==3)
             {
                 if (e.RowIndex >= 0)
                 {
@@ -113,25 +115,52 @@ namespace DnDCharacterSheet
                 }
 
             }
+            //Delete
+            if (e.ColumnIndex == 4)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    var users = dataGridView1.Rows[e.RowIndex];   
+                    var dati = users.DataBoundItem as SystemUsers;
+                        if (dati == null)
+                        {
+                            return;
+                        }
+
+                    if(dati.IsAdmin && dati.UserId== Program.UserId)
+                    {
+                        MessageBox.Show("Administrators cannot delete themselves!");
+                        return;
+                    }
+
+                    if(MessageBox.Show("Do you want to delete the user?", "Deleting users", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+
+                        DatuBāze.DabūtDbInstanci.UserDelete(dati.UserId);
+                        var lietotaji = DatuBāze.DabūtDbInstanci.GetAllUses();
+                        systemUsersBindingSource.DataSource = lietotaji;
+                        systemUsersBindingSource.ResetBindings(true);
+                    }                 
+                }
+
+            }
         }
 
         private void dataGridView1_CellValidated(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 3)
+            if (e.ColumnIndex == 2)
             {
                 if (e.RowIndex >= 0)
                 {
                     var users = dataGridView1.Rows[e.RowIndex];
 
-                    using (EditPassword frm = new EditPassword())
-                    {
                         var dati = users.DataBoundItem as SystemUsers;
                         if (dati == null)
                         {
                             return;
                         }
                         DatuBāze.DabūtDbInstanci.UserSave(dati.UserId, dati.IsAdmin);
-                    }
+                    
                 }
 
             }

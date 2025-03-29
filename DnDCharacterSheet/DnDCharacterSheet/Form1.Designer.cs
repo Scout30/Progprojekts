@@ -235,7 +235,7 @@
             // 
             // PassiveWisdom
             // 
-            PassiveWisdom.DataBindings.Add(new Binding("Value", bindingSourceDND, "PasiveVisdom", true));
+            PassiveWisdom.DataBindings.Add(new Binding("Value", bindingSourceDND, "PassiveWisdom", true));
             PassiveWisdom.Location = new Point(104, 478);
             PassiveWisdom.Name = "PassiveWisdom";
             PassiveWisdom.Size = new Size(56, 23);
@@ -1042,7 +1042,7 @@
             // 
             // numericUpDown11
             // 
-            numericUpDown11.DataBindings.Add(new Binding("DataContext", bindingSourceDND, "TemporaryHP", true));
+            numericUpDown11.DataBindings.Add(new Binding("Value", bindingSourceDND, "TemporaryHP", true));
             numericUpDown11.Location = new Point(95, 154);
             numericUpDown11.Name = "numericUpDown11";
             numericUpDown11.Size = new Size(134, 23);
@@ -1200,6 +1200,7 @@
             // textBox11
             // 
             textBox11.DataBindings.Add(new Binding("Text", bindingSourceDND, "UserName", true));
+            textBox11.Enabled = false;
             textBox11.Location = new Point(111, 37);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(300, 23);
