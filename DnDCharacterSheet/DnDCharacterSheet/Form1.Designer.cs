@@ -494,6 +494,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
+            panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel1.Controls.Add(groupBox13);
             panel1.Controls.Add(groupBox12);
             panel1.Controls.Add(groupBox11);
@@ -505,7 +506,7 @@
             panel1.Controls.Add(groupBox2);
             panel1.Location = new Point(11, 74);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1007, 585);
+            panel1.Size = new Size(1007, 682);
             panel1.TabIndex = 5;
             // 
             // groupBox13
@@ -513,7 +514,7 @@
             groupBox13.Controls.Add(FeaturesAndTraits);
             groupBox13.Location = new Point(12, 760);
             groupBox13.Name = "groupBox13";
-            groupBox13.Size = new Size(951, 161);
+            groupBox13.Size = new Size(951, 283);
             groupBox13.TabIndex = 27;
             groupBox13.TabStop = false;
             groupBox13.Text = "Features and traits";
@@ -521,9 +522,9 @@
             // FeaturesAndTraits
             // 
             FeaturesAndTraits.DataBindings.Add(new Binding("Text", bindingSourceDND, "FeaturesAndTraits", true));
-            FeaturesAndTraits.Location = new Point(6, 22);
+            FeaturesAndTraits.Location = new Point(0, 22);
             FeaturesAndTraits.Name = "FeaturesAndTraits";
-            FeaturesAndTraits.Size = new Size(939, 133);
+            FeaturesAndTraits.Size = new Size(939, 255);
             FeaturesAndTraits.TabIndex = 0;
             FeaturesAndTraits.Text = "";
             // 
@@ -1280,7 +1281,7 @@
             // buttonSave
             // 
             buttonSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            buttonSave.Location = new Point(14, 662);
+            buttonSave.Location = new Point(14, 762);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(144, 35);
             buttonSave.TabIndex = 19;
@@ -1291,7 +1292,7 @@
             // buttonClose
             // 
             buttonClose.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            buttonClose.Location = new Point(164, 662);
+            buttonClose.Location = new Point(196, 762);
             buttonClose.Name = "buttonClose";
             buttonClose.Size = new Size(144, 35);
             buttonClose.TabIndex = 20;
@@ -1302,7 +1303,7 @@
             // buttonDelete
             // 
             buttonDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            buttonDelete.Location = new Point(874, 665);
+            buttonDelete.Location = new Point(874, 765);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(144, 35);
             buttonDelete.TabIndex = 21;
@@ -1314,7 +1315,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1030, 698);
+            ClientSize = new Size(1030, 798);
             Controls.Add(buttonDelete);
             Controls.Add(buttonClose);
             Controls.Add(buttonSave);
@@ -1335,7 +1336,7 @@
             Controls.Add(label2);
             Controls.Add(CharakterName);
             Controls.Add(CharakterNameLabel);
-            MinimumSize = new Size(1005, 737);
+            MinimumSize = new Size(1005, 837);
             Name = "CharacterSheet";
             Text = "Character Sheet";
             Load += CharacterSheet_Load;
