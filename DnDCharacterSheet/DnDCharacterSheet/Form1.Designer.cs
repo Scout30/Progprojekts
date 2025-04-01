@@ -236,7 +236,7 @@
             // PassiveWisdom
             // 
             PassiveWisdom.DataBindings.Add(new Binding("Value", bindingSourceDND, "PassiveWisdom", true));
-            PassiveWisdom.Location = new Point(104, 478);
+            PassiveWisdom.Location = new Point(53, 466);
             PassiveWisdom.Name = "PassiveWisdom";
             PassiveWisdom.Size = new Size(56, 23);
             PassiveWisdom.TabIndex = 23;
@@ -269,7 +269,7 @@
             // numericUpDown6
             // 
             numericUpDown6.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainCharisma", true));
-            numericUpDown6.Location = new Point(88, 389);
+            numericUpDown6.Location = new Point(88, 397);
             numericUpDown6.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown6.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDown6.Name = "numericUpDown6";
@@ -280,7 +280,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(13, 391);
+            label11.Location = new Point(13, 399);
             label11.Name = "label11";
             label11.Size = new Size(57, 15);
             label11.TabIndex = 16;
@@ -289,18 +289,18 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(0, 480);
+            label10.Location = new Point(28, 448);
             label10.Name = "label10";
-            label10.Size = new Size(92, 15);
+            label10.Size = new Size(104, 15);
             label10.TabIndex = 3;
-            label10.Text = "Passive Wisdom";
+            label10.Text = "Passive Perseption";
             // 
             // Charisma_Value
             // 
             Charisma_Value.AutoSize = true;
             Charisma_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "CharismaValue", true));
             Charisma_Value.Font = new Font("Segoe UI", 25F);
-            Charisma_Value.Location = new Point(13, 415);
+            Charisma_Value.Location = new Point(6, 353);
             Charisma_Value.Name = "Charisma_Value";
             Charisma_Value.Size = new Size(61, 46);
             Charisma_Value.TabIndex = 17;
@@ -309,7 +309,7 @@
             // numericUpDown4
             // 
             numericUpDown4.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainIntelligence", true));
-            numericUpDown4.Location = new Point(88, 249);
+            numericUpDown4.Location = new Point(88, 266);
             numericUpDown4.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown4.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDown4.Name = "numericUpDown4";
@@ -322,7 +322,7 @@
             Intelligence_Value.AutoSize = true;
             Intelligence_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "IntelligenceValue", true));
             Intelligence_Value.Font = new Font("Segoe UI", 25F);
-            Intelligence_Value.Location = new Point(13, 275);
+            Intelligence_Value.Location = new Point(6, 220);
             Intelligence_Value.Name = "Intelligence_Value";
             Intelligence_Value.Size = new Size(61, 46);
             Intelligence_Value.TabIndex = 14;
@@ -332,7 +332,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(13, 251);
+            label9.Location = new Point(13, 266);
             label9.Name = "label9";
             label9.Size = new Size(68, 15);
             label9.TabIndex = 13;
@@ -341,7 +341,7 @@
             // numericUpDown5
             // 
             numericUpDown5.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainWisdom", true));
-            numericUpDown5.Location = new Point(88, 319);
+            numericUpDown5.Location = new Point(88, 328);
             numericUpDown5.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown5.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDown5.Name = "numericUpDown5";
@@ -352,7 +352,7 @@
             // numericUpDown3
             // 
             numericUpDown3.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainConstitution", true));
-            numericUpDown3.Location = new Point(88, 181);
+            numericUpDown3.Location = new Point(88, 202);
             numericUpDown3.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown3.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDown3.Name = "numericUpDown3";
@@ -363,7 +363,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(13, 321);
+            label7.Location = new Point(13, 330);
             label7.Name = "label7";
             label7.Size = new Size(51, 15);
             label7.TabIndex = 10;
@@ -374,7 +374,7 @@
             Wisdom_Value.AutoSize = true;
             Wisdom_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "WisdomValue", true));
             Wisdom_Value.Font = new Font("Segoe UI", 25F);
-            Wisdom_Value.Location = new Point(13, 345);
+            Wisdom_Value.Location = new Point(6, 284);
             Wisdom_Value.Name = "Wisdom_Value";
             Wisdom_Value.Size = new Size(61, 46);
             Wisdom_Value.TabIndex = 11;
@@ -385,7 +385,7 @@
             Constitution_Value.AutoSize = true;
             Constitution_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "ConstitutionValue", true));
             Constitution_Value.Font = new Font("Segoe UI", 25F);
-            Constitution_Value.Location = new Point(13, 205);
+            Constitution_Value.Location = new Point(6, 158);
             Constitution_Value.Name = "Constitution_Value";
             Constitution_Value.Size = new Size(61, 46);
             Constitution_Value.TabIndex = 8;
@@ -394,7 +394,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(13, 181);
+            label5.Location = new Point(13, 204);
             label5.Name = "label5";
             label5.Size = new Size(73, 15);
             label5.TabIndex = 7;
@@ -403,7 +403,7 @@
             // numericUpDown2
             // 
             numericUpDown2.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainDexterity", true));
-            numericUpDown2.Location = new Point(88, 108);
+            numericUpDown2.Location = new Point(88, 131);
             numericUpDown2.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown2.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDown2.Name = "numericUpDown2";
@@ -416,7 +416,7 @@
             Dexterity_Value.AutoSize = true;
             Dexterity_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "DexterityValue", true));
             Dexterity_Value.Font = new Font("Segoe UI", 25F);
-            Dexterity_Value.Location = new Point(13, 134);
+            Dexterity_Value.Location = new Point(13, 87);
             Dexterity_Value.Name = "Dexterity_Value";
             Dexterity_Value.Size = new Size(52, 46);
             Dexterity_Value.TabIndex = 5;
@@ -425,7 +425,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(13, 110);
+            label4.Location = new Point(13, 133);
             label4.Name = "label4";
             label4.Size = new Size(54, 15);
             label4.TabIndex = 4;
@@ -434,7 +434,7 @@
             // numericUpDown1
             // 
             numericUpDown1.DataBindings.Add(new Binding("Value", bindingSourceDND, "MainStrength", true));
-            numericUpDown1.Location = new Point(88, 40);
+            numericUpDown1.Location = new Point(88, 63);
             numericUpDown1.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
@@ -447,7 +447,7 @@
             Strength_Value.AutoSize = true;
             Strength_Value.DataBindings.Add(new Binding("Text", bindingSourceDND, "StrengthValue", true));
             Strength_Value.Font = new Font("Segoe UI", 25F);
-            Strength_Value.Location = new Point(13, 64);
+            Strength_Value.Location = new Point(6, 19);
             Strength_Value.Name = "Strength_Value";
             Strength_Value.Size = new Size(61, 46);
             Strength_Value.TabIndex = 1;
@@ -456,7 +456,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(13, 40);
+            label1.Location = new Point(13, 65);
             label1.Name = "label1";
             label1.Size = new Size(52, 15);
             label1.TabIndex = 0;
@@ -1095,6 +1095,7 @@
             // Initiative
             // 
             Initiative.AutoSize = true;
+            Initiative.DataBindings.Add(new Binding("Text", bindingSourceDND, "Initiative", true));
             Initiative.Location = new Point(102, 33);
             Initiative.Name = "Initiative";
             Initiative.Size = new Size(18, 15);
